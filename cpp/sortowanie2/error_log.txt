@@ -1,0 +1,29 @@
+main.cpp: In function ‘int main()’:
+main.cpp:27:39: error: expected ‘)’ before ‘;’ token
+   27 |         swap(numbers[y], numbers[y+1]);
+      |                                       ^
+      |                                       )
+main.cpp:26:11: note: to match this ‘(’
+   26 |         if(numbers[y]>numbers[y+1];
+      |           ^
+main.cpp:27:13: error: could not convert ‘std::swap<int>((* & numbers.std::vector<int>::operator[](((std::vector<int>::size_type)y))), (* & numbers.std::vector<int>::operator[](((std::vector<int>::size_type)(y + 1)))))’ from ‘std::_Require<std::__not_<std::__is_tuple_like<int> >, std::is_move_constructible<int>, std::is_move_assignable<int> >’ {aka ‘void’} to ‘bool’
+   27 |         swap(numbers[y], numbers[y+1]);
+      |         ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |             |
+      |             std::_Require<std::__not_<std::__is_tuple_like<int> >, std::is_move_constructible<int>, std::is_move_assignable<int> > {aka void}
+main.cpp: At global scope:
+main.cpp:31:1: error: expected unqualified-id before ‘for’
+   31 | for(int v=0;v<numbers.size();v++){
+      | ^~~
+main.cpp:31:13: error: ‘v’ does not name a type
+   31 | for(int v=0;v<numbers.size();v++){
+      |             ^
+main.cpp:31:30: error: ‘v’ does not name a type
+   31 | for(int v=0;v<numbers.size();v++){
+      |                              ^
+main.cpp:34:9: error: expected unqualified-id before ‘return’
+   34 |         return 0;
+      |         ^~~~~~
+main.cpp:35:1: error: expected declaration before ‘}’ token
+   35 | }
+      | ^
